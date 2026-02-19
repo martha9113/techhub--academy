@@ -1,4 +1,4 @@
-import { Mail, Youtube, Code2 } from 'lucide-react';
+import { Mail, Youtube } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -22,13 +22,18 @@ export default function Contact() {
               <p className="text-blue-200">techhubacademy25@gmail.com</p>
             </a>
 
-            <div className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105 flex flex-col items-center">
+            <a
+              href="https://www.youtube.com/@tech_hub_academy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105 flex flex-col items-center"
+            >
               <div className="bg-blue-600 p-4 rounded-full mb-4">
                 <Youtube className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2">Subscribe on YouTube</h3>
               <p className="text-blue-200">Tech Hub Academy</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -37,7 +42,11 @@ export default function Contact() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <Code2 className="w-6 h-6 text-blue-400" />
+              <img 
+                src="/images/image.png" 
+                alt="Tech Hub Academy Logo" 
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-lg font-semibold">Tech Hub Academy</span>
             </div>
             <p className="text-blue-300 text-center md:text-right">
