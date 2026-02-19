@@ -10,7 +10,7 @@ export default function GetStartedPage({ onBack }: GetStartedPageProps) {
       icon: Globe,
       title: 'HTML',
       description: 'Learn the foundation of web development with HTML elements, tags, and structure',
-      youtubeUrl: 'https://www.youtube.com/@tech_hub_academy',
+      youtubeUrl: 'https://youtube.com/playlist?list=PLcbaGCPvN7yP6l945Q9Yal905ZcTB-y--&si=aoCd-zRrzsZjU7VC',
     },
     {
       icon: Palette,
@@ -28,13 +28,13 @@ export default function GetStartedPage({ onBack }: GetStartedPageProps) {
       icon: Network,
       title: 'Network Infrastructure',
       description: 'Understand how computers communicate and networks function',
-      youtubeUrl: 'https://www.youtube.com/@tech_hub_academy',
+      youtubeUrl: 'https://youtube.com/playlist?list=PLcbaGCPvN7yMUL0eq8eIDplgIu0HGFv1y&si=1iPQ7RzVJYo3EK8_',
     },
     {
       icon: Monitor,
       title: 'Operating Systems',
       description: 'Learn the fundamentals of computer operating systems and management',
-      youtubeUrl: 'https://www.youtube.com/@tech_hub_academy',
+      youtubeUrl: 'https://youtube.com/playlist?list=PLcbaGCPvN7yMimhcOZzCCYvROPHTEyfLO&si=WhGLEPKMs_eCJ0Vv',
     },
   ];
 
@@ -81,19 +81,13 @@ export default function GetStartedPage({ onBack }: GetStartedPageProps) {
             <button
               key={index}
               onClick={() => handleProgramClick(program.youtubeUrl)}
-              className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700 hover:border-red-500 transition-all duration-300 hover:transform hover:scale-105 hover:bg-blue-800/70 text-left group"
+              className="bg-blue-800/50 backdrop-blur-sm p-8 rounded-2xl border border-blue-700 hover:border-blue-500 transition-all duration-300 hover:transform hover:scale-105 hover:bg-blue-800/70 text-left group"
             >
-              <div className="bg-gradient-to-br from-blue-600 to-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:from-red-600 group-hover:to-red-700 transition-all duration-300">
+              <div className="bg-gradient-to-br from-blue-600 to-purple-600 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:from-blue-700 group-hover:to-purple-700 transition-all duration-300">
                 <program.icon className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">{program.title}</h3>
-              <p className="text-blue-200 leading-relaxed text-sm mb-4">{program.description}</p>
-              <div className="flex items-center text-red-400 group-hover:text-red-300 transition-colors">
-                <span className="text-sm font-semibold">Watch on YouTube</span>
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </div>
+              <p className="text-blue-200 leading-relaxed text-sm">{program.description}</p>
             </button>
           ))}
         </div>
